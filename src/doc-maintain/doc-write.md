@@ -45,11 +45,11 @@ src/
 │               ├── index.md
 │               └── ...
 ├── ...
-└── doc_maintain/                 # 文档维护（当前目录）
+└── doc-maintain/                 # 文档维护（当前目录）
     ├── index.md                  # 文档维护首页（章节描述）
-    ├── env_init.md
-    ├── doc_write.md              # 文档的编写（当前页面）
-    └── doc_format.md
+    ├── env-init.md
+    ├── doc-write.md              # 文档的编写（当前页面）
+    └── doc-format.md
 ```
 
 ## 须知
