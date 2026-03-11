@@ -14,7 +14,7 @@
     - [试验机通讯操作文档](./products/video-extensometer/standard-edition/monocular2d/testing-machinecommunicationoperation-document-V1-2025.12.25.md)
   - [视觉应变仪](./products/vision-strain-gauge/index.md)
     - [单目 2D 应变仪使用手册](./products/vision-strain-gauge/monocular2d/2duser-manual-V1-2024.11.27.md)
-    - [单目 3D 应变仪使用手册](./products/vision-strain-gauge/monocular3d/vision-strain-gaugeuser-manual-V1-2024.8.26.md)
+
     - [双目 3D 应变仪使用手册](./products/vision-strain-gauge/stereo3d/vision-strain-gaugeuser-manual-V1-2024.12.md)
     - [客户独立版本索引](./products/vision-strain-gauge/customer-independent-versions/index.md)
     - [BLUE BOX 新 UI 界面使用手册](./products/vision-strain-gauge/monocular3d/blue-boxvision-strain-gaugeuser-manual-ui2024.8.md)
