@@ -1,4 +1,4 @@
-**BLUE BOX 视觉应变仪使用手册**
+BLUE BOX 视觉应变仪使用手册
 
 <img src="../../../assets/products/vision-strain-gauge/image2.png"
 style="width:5.60833in;height:4.11806in" />
@@ -45,21 +45,16 @@ style="width:5.60833in;height:4.11806in" />
 
 # 
 
-# 一、设备介绍
+# 1. 设备介绍
+应变仪主要部件：设备主机、操作软件、加密狗、光源及光源控制器、固定支架及云台、标定板、USB3.0 数据线、散斑喷漆或高温材料。
 
-**应变仪主要部件：设备主机、操作软件、加密狗、光源及光源控制器、固定支架及云台、标定板、USB3.0 数据线、散斑喷漆或高温材料。**
-
-# 1、设备主机
-
-主要包括蓝色外观方形盒子和防尘盖两部分，通过底部不同的固定孔位可实现水平放置或者呈 90°竖直放置。
+# 1. 设备主机主要包括蓝色外观方形盒子和防尘盖两部分，通过底部不同的固定孔位可实现水平放置或者呈 90°竖直放置。
 
 <img src="../../../assets/products/vision-strain-gauge/image3.jpeg"
 style="width:4.37431in;height:3.27986in"
 alt="b2df08d912907ea86a12d7133b79d3e" />
 
-# 2、光源
-
-常温标准视野配置环光，高温炉环境配置射灯，高低温箱环境配置射灯。
+# 2. 光源常温标准视野配置环光，高温炉环境配置射灯，高低温箱环境配置射灯。
 
 <img src="../../../assets/products/vision-strain-gauge/image4.jpeg"
 style="width:1.12569in;height:1.47222in"
@@ -71,17 +66,13 @@ alt="c1aaed804931dc69e1368bfa032298d" />
 style="width:2.60417in;height:1.5125in"
 alt="b77b552654ca15d446d47262414dad4" />
 
-# 3、固定支架 
-
-利用试验机安装孔固定的有旋转支架或 45 度支架，可移动式固定支架有三角架或电动支架。
+# 3. 固定支架利用试验机安装孔固定的有旋转支架或 45 度支架，可移动式固定支架有三角架或电动支架。
 
 <img src="../../../assets/products/vision-strain-gauge/image7.png"
 style="width:1.7875in;height:2.49236in" /><img src="../../../assets/products/vision-strain-gauge/image8.png"
 style="width:2.79787in;height:2.51993in" />
 
-# 4、散斑
-
-1）常温试验时，采用标配的黑白颜色散斑喷漆。
+# 4. 散斑1）常温试验时，采用标配的黑白颜色散斑喷漆。
 
 2）高温试验时，采用酒精加高温材料，制作高温散斑。
 
@@ -89,8 +80,7 @@ style="width:2.79787in;height:2.51993in" />
 style="width:2.94167in;height:2.15625in" /><img src="../../../assets/products/vision-strain-gauge/image10.png"
 style="width:2.60417in;height:2.15486in" />
 
-# 二、硬件安装
-
+# 2. 硬件安装
 1.  固定好旋转支架或三角架。
 
 2.  将快装板固定在应变仪底座上。
@@ -115,12 +105,11 @@ style="width:2.60417in;height:2.15486in" />
 
 10. 打开电脑，进行软件操作，对应变仪、灯光等进行微调。
 
-# 三、软件安装
+# 3. 软件安装
+初次使用时，必须在试验机电脑上先进行软件安装。
 
-**初次使用时，必须在试验机电脑上先进行软件安装。**
-
-**电脑基本配置要求：i7 处理器 16GB 内存 1TB 固态硬盘 USB3.0 接口/
-64 位 WIN10 操作系统以上。**
+电脑基本配置要求：i7 处理器 16GB 内存 1TB 固态硬盘 USB3.0 接口/
+64 位 WIN10 操作系统以上。
 
 # 相机驱动安装
 
@@ -163,9 +152,7 @@ style="width:2.80833in;height:2.79861in" />
 
 # 软件使用
 
-# 1、软件打开
-
-将加密狗 U 盘插入到电脑主机 USB 插口中，双击软件图标<img src="../../../assets/products/vision-strain-gauge/image18.png"
+# 1. 软件打开将加密狗 U 盘插入到电脑主机 USB 插口中，双击软件图标<img src="../../../assets/products/vision-strain-gauge/image18.png"
 style="width:0.40208in;height:0.44236in" />
 ，打开软件页面左侧从上往下图标依次为【主界面】、【图片采集】、【相机标定】、【分析计算】、【实时应变片】、【报告生成】
 
@@ -174,16 +161,12 @@ style="width:0.40208in;height:0.44236in" />
 <img src="../../../assets/products/vision-strain-gauge/image19.png"
 style="width:5.26111in;height:3.28819in" />
 
-# 2、创建新项目
-
-点击软件“新建项目”弹出新建项目对话框，填写项目名称，选择保存项目路径。
+# 2. 创建新项目点击软件“新建项目”弹出新建项目对话框，填写项目名称，选择保存项目路径。
 
 <img src="../../../assets/products/vision-strain-gauge/image20.png"
 style="width:5.28056in;height:3.30069in" />
 
-# 3、相机采集设置
-
-1）在“图片采集”界面点击相机按钮呈高亮状态，即可实时显示画面。
+# 3. 相机采集设置1）在“图片采集”界面点击相机按钮呈高亮状态，即可实时显示画面。
 
 2）在“采集设置”设置板块，根据测试需求设置采集方式，结束方式，根据视野亮度适当调整曝光时间。
 
@@ -195,9 +178,7 @@ style="width:5.26875in;height:3.29375in" />
 <img src="../../../assets/products/vision-strain-gauge/image22.png"
 style="width:5.21111in;height:3.25694in" />
 
-# 4、分析计算
-
-点击“分析计算”按钮，进入计算界面
+# 4. 分析计算点击“分析计算”按钮，进入计算界面
 
 1）在“区域选择”中下根据试样形状和检测位置，框选合适的测试区域类型和位置。
 
@@ -241,9 +222,7 @@ style="width:4.32361in;height:2.64931in" />
 <img src="../../../assets/products/vision-strain-gauge/image31.png"
 style="width:5.76806in;height:3.60486in" />
 
-# 5、应变片功能
-
-1）点击“应变片”，进入功能界面，点击“相机”按钮进行实时画面显示，在相机设置中设置相机帧率，根据图像明亮程度设置曝光时间，最后设置图片保存路径。
+# 5. 应变片功能1）点击“应变片”，进入功能界面，点击“相机”按钮进行实时画面显示，在相机设置中设置相机帧率，根据图像明亮程度设置曝光时间，最后设置图片保存路径。
 
 2）相机设置完成，点击“创建”按钮，自定义创建应变片大小、位置。
 
@@ -252,9 +231,7 @@ style="width:5.76806in;height:3.60486in" />
 <img src="../../../assets/products/vision-strain-gauge/image32.png"
 style="width:5.23889in;height:3.27431in" />
 
-# 6、报告生成
-
-1）点击“报告信息”按钮，弹出填写报告信息窗口。填写信息将体现在报告中。
+# 6. 报告生成1）点击“报告信息”按钮，弹出填写报告信息窗口。填写信息将体现在报告中。
 
 <img src="../../../assets/products/vision-strain-gauge/image33.png"
 style="width:3.09306in;height:3.47569in" />
@@ -269,8 +246,7 @@ style="width:4.25833in;height:2.66181in" />
 <img src="../../../assets/products/vision-strain-gauge/image35.png"
 style="width:4.14931in;height:2.19236in" />
 
-# 五、安全操作及注意事项
-
+# 5. 安全操作及注意事项
 1.  未经专业培训，不得单独操作此仪器。
 
 2.  使用时尽量不要让光源直射人眼，避免可能造成操作人员眼部伤害。
@@ -292,11 +268,11 @@ style="width:4.14931in;height:2.19236in" />
 
 9.  即使发现仪器功能异常，非专业维修人员不可擅自拆开仪器，以免发生不必要的损坏。
 
-**感谢您选用我公司产品！**
+感谢您选用我公司产品！
 
-**海塞姆，点亮机器的眼睛！**
+海塞姆，点亮机器的眼睛！
 
-**深圳市海塞姆科技有限公司**
+深圳市海塞姆科技有限公司
 
 地址：深圳市南山区桃源街道平山社区
 
