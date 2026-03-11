@@ -60,9 +60,7 @@ alt="a12213fb-51ca-4ffc-bbc7-594d9e24771f" />
 # 
 
 # 1. CAUTIONS
-
 ## 1.1. Safety Instructions
-
 1)  When power accessories are required for this system, the standard
     three-phase 220V voltage with grounding device shall be used.
     Incorrect working voltage may cause equipment failure or fire
@@ -82,7 +80,6 @@ alt="a12213fb-51ca-4ffc-bbc7-594d9e24771f" />
     must be followed during use.
 
 ## 1.2. Warnings
-
 1)  Keep the mirror surface clean during use. Do not touch the mirror
     surface with hands or sharp objects to avoid contamination that may
     affect imaging quality.
@@ -109,7 +106,6 @@ alt="a12213fb-51ca-4ffc-bbc7-594d9e24771f" />
     Do not handle the problem arbitrarily.
 
 ## 1.3. Legal Statement
-
 1)  All contents of this manual including text, images, operation
     guidelines and parameter descriptions are the legal intellectual
     property of Hysem Technology Co., Ltd. and protected by law. You may
@@ -146,7 +142,6 @@ alt="a12213fb-51ca-4ffc-bbc7-594d9e24771f" />
     responsible by our company according to law.
 
 # 2. SYSTEM INTRODUCTION
-
 The 2D Video Extensometer mainly consists of the following components:
 
 -   Main equipment unit
@@ -166,7 +161,6 @@ The 2D Video Extensometer mainly consists of the following components:
 -   Marking points (or high-temperature materials)
 
 ## 2.1. Measurement Principle
-
 The 2D Video Extensometer is an optical non-contact deformation
 measurement device. It captures sequential images of the specimen
 surface through a camera and analyzes the displacement changes of
@@ -186,7 +180,6 @@ standard feature points arranged on the specimen serve as the features
 to be matched and tracked by the video extensometer.
 
 ## 2.2. Application Scenarios
-
 1)  Metal material testing: Tensile, compression and bending tests for
     measuring elastic modulus, Poisson's ratio and yield strength
 
@@ -203,7 +196,6 @@ to be matched and tracked by the video extensometer.
     engineering scaffolds and biomedical elastomers
 
 ## 2.3. Hardware Configuration
-
 1)  Main equipment unit: The appearance of the main equipment unit is
     shown in Figure 2 and Figure 3. The front end (Figure 2) is a
     high-transmittance acrylic panel with lighting sources on both
@@ -279,30 +271,25 @@ style="width:4.72431in;height:1.225in" alt="IMG_7820" />
 style="width:4.72431in;height:1.39444in" alt="IMG_7819" />
 
 ## 2.4. Measurement Process
-
-### 1) Set up the measurement system environment
-
+### 1. ) Set up the measurement system environment
 1.  Install the video extensometer, camera driver and data acquisition
     > card software.
 
 2.  Install fixed devices (portable tripod/rotating support/mobile
     > support), video extensometer and light source.
 
-### 2) Pre-measurement preparation
-
+### 2. ) Pre-measurement preparation
 Adjust the object distance and angle of the video extensometer to place
 the system in a reasonable position and perform calibration. Arrange
 feature points (standard marking points/hand-drawn marking points) on
 the surface of the specimen to be tested.
 
-### 3) Start measurement
-
+### 3. ) Start measurement
 Collect images in real time and calculate the deformation and strain of
 feature points, and input the data into the testing machine system
 simultaneously.
 
-### 4) Result output
-
+### 4. ) Result output
 After the test, the deformation and strain data will be displayed on the
 testing machine interface. The measurement results will be plotted as
 line charts together with the testing machine's load, crosshead
@@ -311,7 +298,6 @@ set to obtain Young's modulus, Poisson's ratio, Rp0.2, tensile strength,
 N value, R value, elongation after fracture, etc.
 
 # 3. SOFTWARE INSTALLATION
-
 Basic configuration requirements for the computer with software
 installed:
 
@@ -326,7 +312,6 @@ installed:
 -   64-bit WIN10 or higher operating system
 
 ## 3.1. Camera Driver Installation
-
 Insert the attached USB flash drive into the computer host to be
 installed, open the USB flash drive - "Camera Driver Software" folder,
 and install the camera driver software.
@@ -344,7 +329,6 @@ desktop after installation. Generally, only the Galaxy Viewer software
 style="width:0.30694in;height:0.37778in" />will be used.
 
 ## 3.2. Video Extensometer Software Installation
-
 Insert the attached USB flash drive into the port of the computer host
 to be installed, copy the "Video Extensometer Software" folder in the
 root directory of the USB flash drive to the D drive of the computer
@@ -362,7 +346,6 @@ style="width:0.34375in;height:0.37778in" />will be automatically
 generated on the desktop after installation.
 
 # 4. HARDWARE INSTALLATION
-
 -   Fix the tripod or install the rotating support.
 
 -   Install the equipment on the tripod or rotating support through the
@@ -414,9 +397,7 @@ generated on the desktop after installation.
     alt="C:\Users\Administrator\Pictures\Screenshots\屏幕截图 2026-02-24 100343.png 屏幕截图 2026-02-24 100343" />
 
 # 5. SOFTWARE OPERATION
-
 ## 5.1. Basic Functions of Video Extensometer Software
-
 1)  Place the marked specimen in the test position. Marking can be done
     by pasting standard circular marking points or drawing obvious
     marking points by hand. First arrange marking points/feature points
@@ -470,7 +451,6 @@ style="width:3.12917in;height:2.3625in" alt="手绘标记点" />
 7)  Click Cancel after calculation to cancel the calculation.
 
 ## 5.2. Detailed Functions of Video Extensometer Software
-
 ### File: Click the "File" button in the menu bar for file operations
 
 ### <img src="../../../../assets/products/video-extensometer/image29.png"
@@ -947,9 +927,7 @@ style="width:5.29514in;height:5.41528in"
 alt="C:\Users\Administrator\Pictures\Screenshots\屏幕截图 2026-02-24 151259.png屏幕截图 2026-02-24 151259" />
 
 # 6. EQUIPMENT MAINTENANCE AND CAUTIONS
-
 ## 6.1. Daily Maintenance
-
 ### Pre-use inspection
 
 5.  Appearance inspection: Confirm the equipment has no collision
@@ -997,7 +975,6 @@ alt="C:\Users\Administrator\Pictures\Screenshots\屏幕截图 2026-02-24 151259.
     > may affect measurement accuracy.
 
 ## 6.2. Periodic Maintenance
-
 ### Monthly maintenance
 
 6.  Comprehensive cleaning:
@@ -1018,7 +995,6 @@ alt="C:\Users\Administrator\Pictures\Screenshots\屏幕截图 2026-02-24 151259.
     > uniform, replace the aging light source if necessary.
 
 ## 6.3. Regular Calibration
-
 1.  Calibration cycle: 12 months under normal use conditions (maximum
     > not exceeding 18 months). Shorten to 6 months when used frequently
     > or in harsh environments.
@@ -1046,7 +1022,6 @@ alt="C:\Users\Administrator\Pictures\Screenshots\屏幕截图 2026-02-24 151259.
 > measurement accuracy.
 
 ## 6.4. Long-term Storage and Special Case Handling
-
 ### Long-term storage (more than 4 weeks)
 
 1.  Thoroughly clean and dry the equipment.

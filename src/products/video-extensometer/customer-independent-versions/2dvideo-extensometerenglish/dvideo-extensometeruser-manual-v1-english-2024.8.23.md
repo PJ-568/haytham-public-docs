@@ -12,19 +12,19 @@ alt="e814ab87945fc87af9a39903f366226" />
 
 # 
 
-# **CONTENTS**
+# CONTENTS
 
-[I**. Principle** [2](#_Toc6730)](#_Toc6730)
+[I. Principle [2](#_Toc6730)](#_Toc6730)
 
-[**Ⅱ. Software installation** [3](#_Toc21410)](#_Toc21410)
+[Ⅱ. Software installation [3](#_Toc21410)](#_Toc21410)
 
-[**Ⅲ. Equipment hardware connection** [5](#_Toc28198)](#_Toc28198)
+[Ⅲ. Equipment hardware connection [5](#_Toc28198)](#_Toc28198)
 
-[**Ⅳ. Elongation meter software** [8](#_Toc24854)](#_Toc24854)
+[Ⅳ. Elongation meter software [8](#_Toc24854)](#_Toc24854)
 
-[**V. Full-field measurement software** [15](#_Toc3089)](#_Toc3089)
+[V. Full-field measurement software [15](#_Toc3089)](#_Toc3089)
 
-[**VI.** **Maintenance of equipment and precautions**
+[VI. Maintenance of equipment and precautions
 [23](#_Toc26357)](#_Toc26357)
 
 <span id="_Toc6730" class="anchor"></span>I. Principle
