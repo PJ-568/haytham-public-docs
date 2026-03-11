@@ -1,0 +1,56 @@
+graph TD
+    %% 用户访问流
+    User[用户/开发者<br/>浏览器] -->|HTTP/HTTPS<br/>访问域名：端口 | Caddy
+
+    %% 网络层
+    Caddy[Caddy 反向代理<br/>端口: 80/443<br/>SSL终止]
+
+    %% 反向代理路由到 Docker 内网
+    subgraph DockerNetwork[Docker 网络 172.17.0.x]
+        Caddy -->|reverse_proxy<br/>172.17.0.1:25600| OpenCode[OpenCode<br/>智能体核心<br/>端口: 25600]
+        Caddy -->|reverse_proxy<br/>172.17.0.1:25601| MCPHub[MCP Hub<br/>工具聚合平台<br/>端口: 25601<br/>认证: 用户名/密码]
+        Caddy -->|reverse_proxy<br/>172.17.0.1:25602| GPTLoad[GPT Load<br/>模型API聚合<br/>端口: 25602<br/>认证: 鉴权密钥]
+        Caddy -->|reverse_proxy<br/>172.17.0.1:25603| SearXNG[SearXNG<br/>聚合搜索引擎<br/>端口: 25603<br/>配置: 国内源优先]
+        Caddy -->|reverse_proxy<br/>172.17.0.1:25604| FetcherMCP[Fetcher MCP<br/>网页内容获取<br/>端口: 25604]
+    end
+
+    %% 内部服务依赖
+    OpenCode -->|MCP协议<br/>http://172.17.0.1:25601/mcp| MCPHub
+    OpenCode -->|API调用<br/>http://172.17.0.1:25602/proxy/agents| GPTLoad
+
+    MCPHub -->|stdin/stdout<br/>SEARXNG_URL配置| SearXNG
+    MCPHub -->|HTTP流式通信<br/>streamable-http| FetcherMCP
+
+    %% 外部集成
+    subgraph External[外部服务]
+        ModelAPIs[大模型API<br/>OpenAI/Claude/...]
+        GitHub[GitHub API]
+    end
+
+    GPTLoad -->|API路由<br/>格式: openai-compatible| ModelAPIs
+    OpenCode -->|Git操作<br/>gh命令| GitHub
+
+    %% 可选组件
+    subgraph Optional[可选组件]
+        QWEN[Qwen-Code<br/>辅助终端智能体]
+    end
+
+    %% SSH隧道映射
+    SSH[SSH端口转发<br/>ssh -L 端口:127.0.0.1:端口]
+    User -.->|开发调试| SSH
+    SSH -->|隧道代理| Caddy
+
+    %% 样式定义
+    classDef default fill:#f9f9f9,stroke:#333,stroke-width:1px;
+    classDef core fill:#e1f5fe,stroke:#01579b;
+    classDef service fill:#f3e5f5,stroke:#4a148c;
+    classDef optional fill:#f1f8e9,stroke:#33691e;
+    classDef external fill:#ffecb3,stroke:#ff8f00;
+    classDef network fill:#e8f5e8,stroke:#2e7d32;
+
+    class OpenCode,GPTLoad core;
+    class MCPHub,SearXNG,FetcherMCP service;
+    class QWEN optional;
+    class ModelAPIs,GitHub external;
+    class DockerNetwork network;
+    class Caddy gateway;
