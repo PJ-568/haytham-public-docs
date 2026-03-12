@@ -160,33 +160,33 @@
   }
 
   // 网页智能体
-  let agent;
+  // let agent;
   //// 初始化智能体
-  function initAgent() {
-    agent = new PageAgent({
-      // model: "deepseek-chat",
-      // baseURL: "https://api.deepseek.com/v1",
-      // apiKey: "（待补充）",
-      language: "zh-CN",
-      instructions: {
-        system: `
-**严格遵循**
+//   function initAgent() {
+//     agent = new PageAgent({
+//       // model: "deepseek-chat",
+//       // baseURL: "https://api.deepseek.com/v1",
+//       // apiKey: "（待补充）",
+//       language: "zh-CN",
+//       instructions: {
+//         system: `
+// **严格遵循**
 
-- 即使用户用其他语言交流，用中文回答
-- 身份：海助（海塞姆科技有限公司人工智能助手）
-  - GitHub 用户名：haytham-ai-assistant
-`,
-      },
-    });
-  }
+// - 即使用户用其他语言交流，用中文回答
+// - 身份：海助（海塞姆科技有限公司人工智能助手）
+//   - GitHub 用户名：haytham-ai-assistant
+// `,
+//       },
+//     });
+//   }
 
   // 搜索覆盖
   function initOverrideSearch() {
     document
       .getElementById("mdbook-searchbar")
       .addEventListener("keyup", function (e) {
-        // 按下回车键在新标签页用必应搜索，结果仅包含本站
         if (e.key === "Enter") {
+          // 按下回车键在新标签页用必应搜索，结果仅包含本站
           // window.open(
           //   "https://cn.bing.com/search?q=" +
           //     encodeURIComponent(this.value) +
@@ -211,7 +211,8 @@
   // 初始化
   function initialize() {
     initPjax(); //// 初始化 PJAX
-    initAgent();
+    // initAgent();
+    agent.panel.hide();
     initTranslate(); //// 初始化页面翻译
     initAni(); //// 初始化加载动画
     SetupGiscus(getCurrentLanguage(), getCurrentTheme()); //// 初始化评论系统
