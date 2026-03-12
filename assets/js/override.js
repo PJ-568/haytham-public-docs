@@ -135,7 +135,9 @@
   //// 初始化 PJAX
   function initPjax() {
     try {
-      const Pjax = window.Pjax || function () {};
+      // const Pjax = window.Pjax || function () {
+      //   console.error('Pjax 初始化出错。');
+      // };
       pjax = new Pjax({
         selectors: [
           "head title",
@@ -157,6 +159,27 @@
     }
   }
 
+  // 网页智能体
+  let agent;
+  //// 初始化智能体
+  function initAgent() {
+    agent = new PageAgent({
+      // model: "deepseek-chat",
+      // baseURL: "https://api.deepseek.com/v1",
+      // apiKey: "（待补充）",
+      language: "zh-CN",
+      instructions: {
+        system: `
+**严格遵循**
+
+- 即使用户用其他语言交流，用中文回答
+- 身份：海助（海塞姆科技有限公司人工智能助手）
+  - GitHub 用户名：haytham-ai-assistant
+`,
+      },
+    });
+  }
+
   // 搜索覆盖
   function initOverrideSearch() {
     document
@@ -164,12 +187,14 @@
       .addEventListener("keyup", function (e) {
         // 按下回车键在新标签页用必应搜索，结果仅包含本站
         if (e.key === "Enter") {
-          window.open(
-            "https://cn.bing.com/search?q=" +
-              encodeURIComponent(this.value) +
-              " site:" +
-              location.host,
-          );
+          // window.open(
+          //   "https://cn.bing.com/search?q=" +
+          //     encodeURIComponent(this.value) +
+          //     " site:" +
+          //     location.host,
+          // );
+          //location.href='?a=' + encodeURIComponent(this.value);
+          agent.panel.show();
         }
       });
   }
@@ -186,6 +211,7 @@
   // 初始化
   function initialize() {
     initPjax(); //// 初始化 PJAX
+    initAgent();
     initTranslate(); //// 初始化页面翻译
     initAni(); //// 初始化加载动画
     SetupGiscus(getCurrentLanguage(), getCurrentTheme()); //// 初始化评论系统
