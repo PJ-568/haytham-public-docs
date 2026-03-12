@@ -4,13 +4,13 @@
 
 OpenCode 是一个开源的 AI 编程助手，可以部署为网页客户端，构建私有、安全的 AI 辅助通用工作和编程环境。海塞姆 AI 助手以 OpenCode 为核心构建了智能体系统，通过 Docker 容器化部署，实现代码生成、自动化测试、文档编写等智能辅助功能。
 
+![智能体系统拓扑](../assets/agents/initialize/agentic_system_structure.png)
+
 ## opencode-docker-web 设计与实现
 
 为实现 OpenCode 的容器化部署，`@PJ568` 设计并实现了 [opencode-docker-web](https://github.com/haytham-ai-assistant/opencode-docker-web)。
 
 ### 设计哲学
-
-![智能体系统拓扑](../assets/agents/initialize/agentic_system_structure.png)
 
 opencode-docker-web 的设计遵循以下核心原则：
 
