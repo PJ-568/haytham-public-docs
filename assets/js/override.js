@@ -183,7 +183,7 @@
     document
       .getElementById("haytham-agent")
       .addEventListener("click", function (e) {
-        agent.panel.show();
+        window.pageAgent.panel.show();
       });
   }
 
@@ -218,7 +218,6 @@
   function initialize() {
     initPjax(); //// 初始化 PJAX
     initAgent();
-    agent.panel.hide();
     initTranslate(); //// 初始化页面翻译
     initAni(); //// 初始化加载动画
     SetupGiscus(getCurrentLanguage(), getCurrentTheme()); //// 初始化评论系统

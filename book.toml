@@ -12,7 +12,7 @@ create-missing = false
 default-theme = "light"
 preferred-dark-theme = "coal"
 additional-css = ["assets/css/override.css"]
-additional-js = ["assets/js/override.js"]
+additional-js = ["assets/js/override.js","assets/js/page-agent.demo.js"]
 # 在网页右上角显示 Git 仓库链接
 git-repository-url = "https://github.com/haytham-ai/public-docs"
 # 在网页右上角显示对应页面的编辑按钮
