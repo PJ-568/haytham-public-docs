@@ -17,6 +17,8 @@ additional-js = ["assets/js/override.js"]
 git-repository-url = "https://github.com/haytham-ai/public-docs"
 # 在网页右上角显示对应页面的编辑按钮
 edit-url-template = "https://github.com/haytham-ai/public-docs/edit/master/{path}"
+sidebar-header-nav = true
+hash-files = false
 
 # 禁用默认折叠目录：启用会导致目录的文档标题子目录失效
 # [output.html.fold]
@@ -25,5 +27,3 @@ edit-url-template = "https://github.com/haytham-ai/public-docs/edit/master/{path
 
 [output.html.playground]
 copyable = true
-
-
