@@ -25,5 +25,8 @@ hash-files = false
 # enable = true
 # level = 0
 
+[output.html.search]
+enable = false
+
 [output.html.playground]
 copyable = true

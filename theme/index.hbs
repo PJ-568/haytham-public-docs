@@ -162,10 +162,13 @@
                             {{ fa "solid" "language" }}
                         </button>
                         {{#if search_enabled}}
-                         <button id="mdbook-search-toggle" class="icon-button" type="button" title="搜索（按 `/` 键）" aria-label="切换搜索栏" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
+                        <button id="mdbook-search-toggle" class="icon-button" type="button" title="搜索（按 `/` 键）" aria-label="切换搜索栏" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="mdbook-searchbar">
                             {{fa "solid" "magnifying-glass"}}
                         </button>
                         {{/if}}
+                        <button id="haytham-agent" class="icon-button" type="button" title="智能体" aria-label="启动智能体" aria-expanded="false" aria-keyshortcuts="/ s" aria-controls="agent">
+                            {{fa "solid" "robot"}}
+                        </button>
                     </div>
 
                     <h1 class="menu-title">{{ book_title }}</h1>
