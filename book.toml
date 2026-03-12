@@ -25,3 +25,5 @@ edit-url-template = "https://github.com/haytham-ai/public-docs/edit/master/{path
 
 [output.html.playground]
 copyable = true
+
+
