@@ -175,6 +175,13 @@
       ) {
         pjax._handleResponse(responseText, request, href, options);
       } else {
+        console.log(
+          "触发智能体任务传递：",
+          responseText,
+          request,
+          href + "?task=" + encodeURIComponent(window.pageAgent.task),
+          options,
+        );
         pjax._handleResponse(
           responseText,
           request,
