@@ -189,11 +189,16 @@
   function initTaskPass() {
     document.body.addEventListener("click", function (e) {
       if (
+        window.pageAgent.task &&
         e.target.closest('a[href$=".html"]') &&
         document.getElementById("page-agent-runtime_simulator-mask").style
           .display !== "none"
       ) {
-        e.href = e.href + "?task=" + encodeURIComponent(window.pageAgent.task);
+        e.preventDefault();
+        const newHref =
+          e.href + "?task=" + encodeURIComponent(window.pageAgent.task);
+        e.href = newHref;
+        location.herf = newHref;
       }
     });
   }
