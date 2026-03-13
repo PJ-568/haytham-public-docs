@@ -6,13 +6,13 @@ function initTask() {
   if (taskValue) {
     window.pageAgent.panel.show();
     window.pageAgent.panel.expand();
-    const prompt =
+    window.pageAgent.execute(
       decodeURIComponent(taskValue) + conclusionValue
         ? "（前智能体总结的阶段性成果：" +
-          decodeURIComponent(conclusionValue) +
-          "）"
-        : "";
-    window.pageAgent.execute(prompt);
+            decodeURIComponent(conclusionValue) +
+            "）"
+        : "",
+    );
   }
 }
 // 初始化智能体任务传递
