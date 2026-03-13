@@ -183,7 +183,14 @@
     document
       .getElementById("haytham-agent")
       .addEventListener("click", function (e) {
-        window.pageAgent.panel.show();
+        if (
+          document.getElementById("page-agent-runtime_agent-panel").style
+            .display === "none"
+        ) {
+          window.pageAgent.panel.show();
+        } else {
+          window.pageAgent.panel.hide();
+        }
       });
   }
 
