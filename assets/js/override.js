@@ -214,6 +214,7 @@
             .display === "none"
         ) {
           window.pageAgent.panel.show();
+          window.pageAgent.panel.expand();
         } else {
           window.pageAgent.panel.hide();
         }
