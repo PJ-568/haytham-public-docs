@@ -185,24 +185,6 @@
   //   };
   // }
 
-  // 初始化智能体任务传递
-  function initTaskPass() {
-    document.body.addEventListener("click", function (e) {
-      if (
-        window.pageAgent.task &&
-        e.target.closest('a[href$=".html"]') &&
-        document.getElementById("page-agent-runtime_simulator-mask").style
-          .display !== "none"
-      ) {
-        e.preventDefault();
-        const newHref =
-          e.href + "?task=" + encodeURIComponent(window.pageAgent.task);
-        e.href = newHref;
-        location.herf = newHref;
-      }
-    });
-  }
-
   // 网页智能体
   // let agent;
   //// 初始化智能体
@@ -267,7 +249,6 @@
 
   // 初始化
   function initialize() {
-    initTaskPass();
     initPjax(); //// 初始化 PJAX
     initAgentBtn();
     // initCustomPJAXResponse();
