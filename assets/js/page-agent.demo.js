@@ -17,7 +17,7 @@ function initTask() {
 }
 // 初始化智能体任务传递
 function initTaskPass(e, message='') {
-  if (e.target.closest('a[href$=".html"]')) {
+  if (e.href) {
     // 使用当前页面 URL 作为基准，解析 e.href（支持相对路径）
     const url = new URL(e.href, window.location.href);
     const taskValue = window.pageAgent?.task;
