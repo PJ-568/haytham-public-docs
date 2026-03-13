@@ -1,18 +1,29 @@
 // 承接任务
 function initTask() {
-  const urlParams = new URLSearchParams(window.location.search);
-  const taskValue = urlParams.get("task"); // 返回任务值或 null
-  const conclusionValue = urlParams.get("conclusion"); // 返回总结值或 null
-  if (taskValue) {
-    window.pageAgent.panel.show();
-    window.pageAgent.panel.expand();
-    window.pageAgent.execute(
-      decodeURIComponent(taskValue) + conclusionValue
-        ? "（前智能体总结的阶段性成果：" +
-            decodeURIComponent(conclusionValue) +
-            "）"
-        : "",
-    );
+  try {
+    const urlParams = new URLSearchParams(window.location.search);
+    const taskValue = urlParams.get("task");
+    const conclusionValue = urlParams.get("conclusion");
+    if (taskValue != null && taskValue !== '') {
+      const decodedTask = safeDecode(taskValue);
+      const decodedConclusion = conclusionValue ? safeDecode(conclusionValue) : '';
+      const fullTask = decodedTask + (decodedConclusion ? `（前智能体总结的阶段性成果：${decodedConclusion}）` : '');
+      if (window.pageAgent?.panel) {
+        window.pageAgent.panel.show();
+        window.pageAgent.panel.expand();
+        window.pageAgent.execute(fullTask);
+      }
+    }
+  } catch (e) {
+    console.error('初始化任务失败', e);
+  }
+}
+// 逐级解码
+function safeDecode(str) {
+  try {
+    return decodeURIComponent(str);
+  } catch {
+    return str; // 降级返回原始字符串
   }
 }
 // 初始化智能体任务传递
