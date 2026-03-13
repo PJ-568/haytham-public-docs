@@ -159,6 +159,32 @@
     }
   }
 
+  // 初始化自定义 PJAX 响应
+  function initCustomPJAXResponse() {
+    //// 覆写 PJAX 处理响应的函数，若处于智能体页面操作阶段，传递智能体提示词到下一页面
+    pjax._handleResponse = pjax.handleResponse;
+    pjax.handleResponse = async function (
+      responseText,
+      request,
+      href,
+      options,
+    ) {
+      if (
+        document.getElementById("page-agent-runtime_simulator-mask").style
+          .display === "none"
+      ) {
+        pjax._handleResponse(responseText, request, href, options);
+      } else {
+        pjax._handleResponse(
+          responseText,
+          request,
+          href + "?task=" + encodeURIComponent(window.pageAgent.task),
+          options,
+        );
+      }
+    };
+  }
+
   // 网页智能体
   // let agent;
   //// 初始化智能体
@@ -194,6 +220,16 @@
       });
   }
 
+  // 承接任务
+  function initTask() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const taskValue = urlParams.get("task"); // 返回任务值或 null
+    if (taskValue) {
+      window.pageAgent.panel.show();
+      window.pageAgent.execute(decodeURIComponent(taskValue));
+    }
+  }
+
   // 搜索覆盖
   // function initOverrideSearch() {
   //   document
@@ -224,7 +260,9 @@
   // 初始化
   function initialize() {
     initPjax(); //// 初始化 PJAX
+    initCustomPJAXResponse();
     initAgent();
+    initTask();
     initTranslate(); //// 初始化页面翻译
     initAni(); //// 初始化加载动画
     SetupGiscus(getCurrentLanguage(), getCurrentTheme()); //// 初始化评论系统
