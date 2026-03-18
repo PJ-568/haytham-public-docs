@@ -24,6 +24,7 @@
   - [智能体的部署](./agents/deploy.md)
   - [智能体的配置](./agents/configure.md)
   - [智能体的维护](./agents/maintain.md)
+  - [智能体相关代办](./agents/to-do.md)
 - [在线文档维护](./doc-maintain/index.md)
   - [软件环境初始化](./doc-maintain/env-init.md)
   - [自动测试工作流](./doc-maintain/actions-init.md)
