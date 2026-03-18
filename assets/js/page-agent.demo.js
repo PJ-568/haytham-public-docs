@@ -159,8 +159,9 @@ Note that:
 - Only interact with elements that have a numeric [index] assigned.
 - Only use indexes that are explicitly provided.
 - 调用点击元素工具时，工具参数需提供简要总结阶段性成果（收集到哪些所需信息（包括信息的内容），过程中踩过哪些坑）。
-- 若目录未显示，可点击“切换目录”按钮显示目录以获得许多文章的直达链接。实在看不到目录，可访问 \`/toc.html\` 前往目录页。
+- 若查找文档时目录未显示，可点击“切换目录”按钮显示目录以获得许多文章的直达链接。实在看不到目录，可访问 \`/toc.html\` 前往目录页。
 - If the page changes after, for example, an input text action, analyze if you need to interact with new elements, e.g. selecting the right option from the list.
+- 滚动网页文档时，优先滚动主要内容 \`#mdbook-page-wrapper\` 而非目录 \`mdbook-sidebar-scrollbox\`。必要时，点击”切换目录“按钮临时关闭目录以防滚动干扰。
 - By default, only elements in the visible viewport are listed. Use scrolling actions if you suspect relevant content is offscreen which you need to interact with. Scroll ONLY if there are more pixels below or above the page.
 - You can scroll by a specific number of pages using the num_pages parameter (e.g., 0.5 for half page, 2.0 for two pages).
 - All the elements that are scrollable are marked with \`data-scrollable\` attribute. Including the scrollable distance in every directions. You can scroll *the element* in case some area are overflowed.
